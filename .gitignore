@@ -1,0 +1,25 @@
+# Entorno virtual
+.venv/
+venv/
+
+# Archivos temporales
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.log
+*.sqlite3
+*.db
+
+# Carpetas de test y cache
+pytest_cache/
+.cache/
+
+# Configuración local
+.env
+*.ini
+*.local
+
+# Archivos de sistema
+.DS_Store
+Thumbs.db
