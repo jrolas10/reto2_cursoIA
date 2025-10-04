@@ -169,7 +169,27 @@ Base de datos	smartcity.db	SQLite (persistente dentro del contenedor)
   }
 ]
 
+Ejecutar manualmente
+# Backend
+uvicorn backend.main:app --reload
 
-📦 Persistencia de datos:
-La base de datos SQLite (smartcity.db) se guarda dentro del contenedor.
-Si quieres mantener tus datos locales, puedes montar un volumen en docker-compose.yml:
+# Frontend
+streamlit run frontend/app.py
+
+
+🐳 Ejecución rápida con Docker
+🔹 1. Clonar el repositorio
+git clone https://github.com/jrolas10/reto2_cursoIA.git
+cd reto2_cursoIA
+
+🔹 2. Levantar todo el entorno
+docker-compose up --build
+
+🔐 Credenciales de acceso
+
+⚠️ Nota importante:
+El sistema de login requiere ingresar la contraseña dos veces:
+la primera valida la autenticación y la segunda permite el ingreso.
+
+Usuario: admin
+Contraseña: admin
